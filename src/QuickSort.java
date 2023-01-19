@@ -1,4 +1,7 @@
-class QuickSort {
+/**
+ * Quick sort. Time complexity = O(n log n), space complexity = O(1).
+ */
+public class QuickSort {
     public static int[] quickSort(int[] array) {
         quickSort(array, 0, array.length - 1);
 
