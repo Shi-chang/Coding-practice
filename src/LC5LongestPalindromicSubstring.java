@@ -1,3 +1,7 @@
+/**
+ * LC5 Longest Palindromic Substring.
+ * Given a string s, return the longest palindromic Substring in s.
+ */
 public class LC5LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         String result = s.substring(0, 1);
