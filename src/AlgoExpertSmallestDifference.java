@@ -16,17 +16,15 @@ public class AlgoExpertSmallestDifference {
             if (arrayOne[p1] == arrayTwo[p2]) {
                 return new int[]{arrayOne[p1], arrayTwo[p2]};
             }
+
+            if (Math.abs(arrayTwo[p2] - arrayOne[p1]) < Math.abs(result[1] - result[0])) {
+                result[0] = arrayOne[p1];
+                result[1] = arrayTwo[p2];
+            }
+
             if (arrayOne[p1] < arrayTwo[p2]) {
-                if (arrayTwo[p2] - arrayOne[p1] < Math.abs(result[1] - result[0])) {
-                    result[0] = arrayOne[p1];
-                    result[1] = arrayTwo[p2];
-                }
                 p1++;
             } else {
-                if (arrayOne[p1] - arrayTwo[p2] < Math.abs(result[1] - result[0])) {
-                    result[0] = arrayOne[p1];
-                    result[1] = arrayTwo[p2];
-                }
                 p2++;
             }
         }
