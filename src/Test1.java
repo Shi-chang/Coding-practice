@@ -37,5 +37,9 @@ public class Test1 {
         Integer[] integers2 = list.toArray(new Integer[0]);
         System.out.println(Arrays.toString(integers2));
 
+        System.out.println('A' - 0);
+        String str = "";
+        System.out.println(str == null);
+        System.out.println(str.length());
     }
 }
