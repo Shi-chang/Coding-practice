@@ -41,5 +41,15 @@ public class Test1 {
         String str = "";
         System.out.println(str == null);
         System.out.println(str.length());
+
+        String str1 = "abcdefg";
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = str1.length() - 1; i >= 0; i--) {
+            sb.append(str1.charAt(i));
+        }
+
+        System.out.println(sb.toString());
+
     }
 }
