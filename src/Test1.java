@@ -50,6 +50,6 @@ public class Test1 {
         }
 
         System.out.println(sb.toString());
-
+        System.out.println("abc".substring(1, 1) + "1");
     }
 }
