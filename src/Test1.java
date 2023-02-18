@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Stack;
 
 public class Test1 {
 
@@ -42,14 +43,18 @@ public class Test1 {
         System.out.println(str == null);
         System.out.println(str.length());
 
-        String str1 = "abcdefg";
 
-        StringBuilder sb = new StringBuilder();
-        for (int i = str1.length() - 1; i >= 0; i--) {
-            sb.append(str1.charAt(i));
-        }
-
-        System.out.println(sb.toString());
         System.out.println("abc".substring(1, 1) + "1");
+
+        System.out.println("abc".compareTo("b"));
+        System.out.println("bc".compareTo("ba"));
+        System.out.println("bc".compareTo("bc"));
+
+        new String('a' + "");
+        Stack<String> stack = new Stack<>();
+        stack.push("abc");
+        System.out.println(stack.empty());
+        System.out.println(stack.isEmpty());
+
     }
 }
