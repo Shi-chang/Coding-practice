@@ -56,5 +56,9 @@ public class Test1 {
         System.out.println(stack.empty());
         System.out.println(stack.isEmpty());
 
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        list1.add(2);
+
     }
 }
